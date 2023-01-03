@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:elevation="3dp"
+    android:background="@drawable/popular_background">
+
+    <TextView
+        android:id="@+id/addButtonMenu"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
+        android:text="+Add"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dishPictureMenu"
+        app:layout_constraintStart_toStartOf="@+id/dishNameMenu" />
+
+    <ImageView
+        android:id="@+id/dishPictureMenu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pop_3" />
+
+    <TextView
+        android:id="@+id/dishNameMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#373b54"
+        app:layout_constraintStart_toEndOf="@+id/dishPictureMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemPriceMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="0"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/addButtonMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dishNameMenu" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="£"
+        android:textColor="@color/fourth"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemPriceMenu"
+        app:layout_constraintEnd_toStartOf="@+id/itemPriceMenu"
+        app:layout_constraintTop_toTopOf="@+id/itemPriceMenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

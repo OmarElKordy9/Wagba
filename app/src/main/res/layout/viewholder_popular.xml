@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="230dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/popular_background"
+    android:elevation="3dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/dishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="DishName"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/relatedRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="relatedRestaurant"
+        app:layout_constraintEnd_toEndOf="@+id/dishName"
+        app:layout_constraintStart_toStartOf="@+id/dishName"
+        app:layout_constraintTop_toBottomOf="@+id/dishName" />
+
+    <ImageView
+        android:id="@+id/dishPicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/relatedRestaurant"
+        app:layout_constraintStart_toStartOf="@+id/relatedRestaurant"
+        app:layout_constraintTop_toBottomOf="@+id/relatedRestaurant"
+        app:srcCompat="@drawable/burger" />
+
+    <TextView
+        android:id="@+id/dishPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dishPicture"
+        app:layout_constraintStart_toStartOf="@+id/dishPicture"
+        app:layout_constraintTop_toBottomOf="@+id/dishPicture" />
+
+    <TextView
+        android:id="@+id/poundSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="£"
+        android:textColor="@color/secondary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dishPrice"
+        app:layout_constraintEnd_toStartOf="@+id/dishPrice"
+        app:layout_constraintTop_toTopOf="@+id/dishPrice" />
+
+    <TextView
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
+        android:text="+Add"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dishPicture"
+        app:layout_constraintStart_toStartOf="@+id/dishPicture"
+        app:layout_constraintTop_toBottomOf="@+id/dishPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

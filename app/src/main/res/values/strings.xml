@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">WagbaProj</string>
+    <string name="brand">Wagba</string>
+    <string name="slogan">Satisfy Your Belly!</string>
+    <string name="getStarted">Get Started</string>
+    <string name="register">Register</string>
+    <string name="fullNameHint">Full Name</string>
+    <string name="lastNameHint">Last Name</string>
+    <string name="emailHint">Email</string>
+    <string name="passwordHint">Password</string>
+    <string name="phoneHint">Phone Number</string>
+    <string name="alreadyUser">Already a user? Sign In</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signIn">Sign In</string>
+    <string name="profilePicDesc">profilePic</string>
+    <string name="deliveryTimes">Delivery Times</string>
+    <string name="duration">12:00 PM &amp; 3:00 PM</string>
+    <string name="toGates">To Gates</string>
+    <string name="gates">3 &amp; 4</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="popularOrders">Popular Orders</string>
+    <string name="textHome">Home</string>
+    <string name="textTrackOrder">Track Order</string>
+    <string name="textOrders">Orders</string>
+    <string name="textLogout">Logout</string>
+    <string name="addToCart">Add to cart</string>
+    <string name="myCart">My Cart</string>
+    <string name="itemsTotal">Items Total:</string>
+    <string name="delivery">Delivery:</string>
+    <string name="tax">Taxes:</string>
+    <string name="total">Total:</string>
+    <string name="checkout">Checkout</string>
+    <string name="myOrders">My Orders</string>
+    <string name="currentOrders">Current Orders</string>
+    <string name="menu">Menu</string>
+    <string name="trackOrder">Track Order</string>
+    <string name="preparing">Preparing</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="userProfile">User Profile</string>
+    <string name="fullName">Full Name:</string>
+    <string name="email">Email:</string>
+    <string name="phoneNumber">Phone Number:</string>
+
+</resources>

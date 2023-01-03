@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/popular_background"
+    android:elevation="3dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/dishNameCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dishNameCart">
+
+        <TextView
+            android:id="@+id/minusButtonCart"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/minus"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="42dp" />
+
+        <TextView
+            android:id="@+id/numberOfItemsCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="1"
+            android:textColor="@color/secondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/plusButtonCart"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/plus"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="42dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dishPictureCart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pop_3" />
+
+    <TextView
+        android:id="@+id/dishNameCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/secondary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/dishPictureCart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eachItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="0"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dishNameCart"
+        app:layout_constraintStart_toStartOf="@+id/dishNameCart" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/eachItemPrice"
+        app:layout_constraintEnd_toStartOf="@+id/eachItemPrice"
+        app:layout_constraintTop_toTopOf="@+id/eachItemPrice" />
+
+    <TextView
+        android:id="@+id/orderTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/fourth"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/eachItemPrice"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="£"
+        android:textColor="@color/fourth"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/orderTotal"
+        app:layout_constraintEnd_toStartOf="@+id/orderTotal"
+        app:layout_constraintTop_toTopOf="@+id/orderTotal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
